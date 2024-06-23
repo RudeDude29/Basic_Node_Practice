@@ -80,18 +80,24 @@ const app = http.createServer(async (req,res)=>{
                 `<div>
                 <h2>${product.title}</h2>
                 <img src='${product.thumbnail}' height='300'>
-                <h4>${product.price}</h4>
+                <h4>Brand:${product.brand} Rating: ${product.rating}<h4>
+                <h4>Price: $${product.price}</h4>
+                <h5>${product.category}<h5>
                 <p>${product.description}</p>
+                <p>Waranty Information : ${product.warrantyInformation}<p>
+                <p>Shipping Information : ${product.shippingInformation}<p>
                 </div>`
 
             )
             res.end(text);
             break;
         }
+        
         default: {
             res.end("<h2>Oops! Page not found...</h2>");
         }
     }
+    
     
     
 });

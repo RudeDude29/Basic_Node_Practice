@@ -1,6 +1,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         * {
             padding: 0;
@@ -9,29 +10,38 @@
         }
 
         nav {
-            height: 10vh;
-            background-color: azure;
-        }
+            height: 6vh;
+            background-color:grey;
+            color: black;
+            font-size: xx-large;
 
+        }
+        
         main {
             padding: 48px;
             /* height: 70vh; */
             background-color: blanchedalmond;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         footer {
-            height: 20vh;
+            height: 10vh;
             background-color: rgb(209, 206, 206);
         }
 
         .product-card {
             border: 1px solid grey;
-
             width: 400px;
             margin: 24px auto;
             padding: 16px;
+           border: 2px solid black;
+            
         }
-
+        .product-card:hover{
+            opacity: 0.8;
+            box-shadow: 2px 8px 12px;
+        }
         img {
             display: block;
             width: fit-content;
@@ -41,11 +51,21 @@
 </head>
 
 <body>
-    <nav></nav>
+    <nav>
+        <a href="/">Home</a>
+        
+    </nav>
     <main>
         $PRODUCTS$
     </main>
-    <footer></footer>
+    <footer>
+        <a href="https:/www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https:/www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https:/www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https:/www.googleplus.com"><i class="fa-brands fa-google-plus"></i></a>
+        <a href="https:/www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        <p>Copyright &copy;2024 Designed by: Ashish</p>
+    </footer>
 </body>
 
 </html>
